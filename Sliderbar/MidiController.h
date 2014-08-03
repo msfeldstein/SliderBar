@@ -12,6 +12,7 @@
     VVMIDIManager *_midiManager;
 }
 @property IBOutlet NSTextField* channelField;
+@property IBOutlet NSView* contentView;
 - (IBAction)sliderChange:(NSSlider*)sender;
 - (IBAction)buttonPress:(NSButton*)sender;
 @end

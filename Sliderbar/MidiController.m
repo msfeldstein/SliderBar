@@ -13,42 +13,30 @@
 - (void)awakeFromNib {
     _midiManager = [[VVMIDIManager alloc] init];
 }
+
 - (IBAction)sliderChange:(NSSlider*)sender {
-    //NSLog(@"AppController:ctrlValSliderUsed:");
     VVMIDIMessage		*msg = nil;
-    
-    //	create a message
+    NSTextField* label = (NSTextField*)[self.contentView viewWithTag:sender.tag + 100];
+    NSInteger sig = label.integerValue;
     msg = [VVMIDIMessage createFromVals:
                  VVMIDIControlChangeVal:
            4:
-           sender.tag:
+           sig:
            floor(127*[sender floatValue])];
-    
-    /*
-     NSArray		*tmpArray = [NSArray arrayWithObjects:[NSNumber numberWithUnsignedChar:0x7F],[NSNumber numberWithUnsignedChar:0x7E],nil];
-     msg = [VVMIDIMessage createWithSysexArray:tmpArray];
-     */
-    //	tell the midi manager to send it
     if (msg != nil)
         [_midiManager sendMsg:msg];
 }
 
 - (IBAction)buttonPress:(NSButton*)sender {
-    //NSLog(@"AppController:ctrlValSliderUsed:");
     VVMIDIMessage		*msg = nil;
-    
-    //	create a message
+    NSTextField* label = (NSTextField*)[self.contentView viewWithTag:sender.tag + 100];
+    NSInteger sig = label.integerValue;
     msg = [VVMIDIMessage createFromVals:
                  VVMIDIControlChangeVal:
            4:
-           sender.tag:
+           sig:
            floor(127*[sender floatValue])];
-    
-    /*
-     NSArray		*tmpArray = [NSArray arrayWithObjects:[NSNumber numberWithUnsignedChar:0x7F],[NSNumber numberWithUnsignedChar:0x7E],nil];
-     msg = [VVMIDIMessage createWithSysexArray:tmpArray];
-     */
-    //	tell the midi manager to send it
+
     if (msg != nil)
         [_midiManager sendMsg:msg];
 }

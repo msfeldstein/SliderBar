@@ -33,6 +33,7 @@
 }
 
 - (IBAction)toggleEditMode:(id)sender {
+    [self.window endEditingFor:nil];
     [self enableAllTextFieldsInView:self.window.contentView];
 }
 
@@ -41,6 +42,7 @@
     for (NSView *view in subviews) {
         if ([view class] == [NSTextField class]) {
             NSTextField* field = (NSTextField*)view;
+            [field resignFirstResponder];
             [field setEnabled:![field isEnabled]];
             [field setBezeled:![field isBezeled]];
         } else {

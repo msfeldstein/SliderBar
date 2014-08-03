@@ -77,7 +77,7 @@
                             <action selector="buttonPress:" target="y88-ci-KQq" id="5LA-NC-2mP"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3L-QP-nAQ">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" tag="116" translatesAutoresizingMaskIntoConstraints="NO" id="K3L-QP-nAQ">
                         <rect key="frame" x="260" y="196" width="37" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" alignment="center" title="16" drawsBackground="YES" id="jNY-dn-M3B">
@@ -86,7 +86,7 @@
                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5GA-a7-CJT">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" tag="117" translatesAutoresizingMaskIntoConstraints="NO" id="5GA-a7-CJT">
                         <rect key="frame" x="260" y="156" width="37" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" alignment="center" title="17" drawsBackground="YES" id="M56-RM-K3m">
@@ -95,7 +95,7 @@
                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S5e-UK-1lw">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" tag="118" translatesAutoresizingMaskIntoConstraints="NO" id="S5e-UK-1lw">
                         <rect key="frame" x="260" y="116" width="37" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" alignment="center" title="18" drawsBackground="YES" id="A3q-gn-IlR">
@@ -104,7 +104,7 @@
                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YjW-na-7TV">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" tag="119" translatesAutoresizingMaskIntoConstraints="NO" id="YjW-na-7TV">
                         <rect key="frame" x="260" y="76" width="37" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" alignment="center" title="19" drawsBackground="YES" id="sxI-4e-5hq">
@@ -124,7 +124,7 @@
                             <action selector="toggleEditMode:" target="-2" id="vIJ-F5-YQF"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1N-66-Odk">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" tag="122" translatesAutoresizingMaskIntoConstraints="NO" id="g1N-66-Odk">
                         <rect key="frame" x="204" y="7" width="48" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" alignment="center" title="22" drawsBackground="YES" id="Uml-P2-BRU">
@@ -133,7 +133,7 @@
                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sYo-MF-YEt">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" tag="121" translatesAutoresizingMaskIntoConstraints="NO" id="sYo-MF-YEt">
                         <rect key="frame" x="112" y="7" width="48" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" alignment="center" title="21" drawsBackground="YES" id="Cru-Zb-5zB">
@@ -142,7 +142,7 @@
                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Hu-3H-eyy">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" tag="120" translatesAutoresizingMaskIntoConstraints="NO" id="6Hu-3H-eyy">
                         <rect key="frame" x="20" y="7" width="48" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" alignment="center" title="20" drawsBackground="YES" id="TC6-n3-gVW">
@@ -157,7 +157,11 @@
                 <outlet property="delegate" destination="-2" id="eGm-NW-s6p"/>
             </connections>
         </window>
-        <customObject id="y88-ci-KQq" customClass="MidiController"/>
+        <customObject id="y88-ci-KQq" customClass="MidiController">
+            <connections>
+                <outlet property="contentView" destination="se5-gp-TjO" id="6vw-FK-6Y7"/>
+            </connections>
+        </customObject>
     </objects>
     <resources>
         <image name="Gear" width="20" height="20"/>
