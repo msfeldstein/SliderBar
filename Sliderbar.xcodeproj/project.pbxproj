@@ -12,6 +12,7 @@
 		4C27D6FC198DBA1C002923FF /* PopupWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C27D6FB198DBA1C002923FF /* PopupWindow.m */; };
 		4C27D6FF198DBBBA002923FF /* MidiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C27D6FE198DBBBA002923FF /* MidiController.m */; };
 		4C27D764198DBFFC002923FF /* VVMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C27D741198DBFC1002923FF /* VVMIDI.framework */; };
+		4C27D767198DC53C002923FF /* RightClickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C27D766198DC53B002923FF /* RightClickButton.m */; };
 		4C8A4F95198D8D4700FC02BF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A4F94198D8D4700FC02BF /* Cocoa.framework */; };
 		4C8A4F9F198D8D4700FC02BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A4F9D198D8D4700FC02BF /* InfoPlist.strings */; };
 		4C8A4FA1198D8D4700FC02BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A4FA0198D8D4700FC02BF /* main.m */; };
@@ -205,6 +206,8 @@
 		4C27D6FD198DBBBA002923FF /* MidiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiController.h; sourceTree = "<group>"; };
 		4C27D6FE198DBBBA002923FF /* MidiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiController.m; sourceTree = "<group>"; };
 		4C27D718198DBFC0002923FF /* VVOpenSource.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VVOpenSource.xcodeproj; path = "../../vvopensource-master/VVOpenSource.xcodeproj"; sourceTree = "<group>"; };
+		4C27D765198DC53B002923FF /* RightClickButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightClickButton.h; sourceTree = "<group>"; };
+		4C27D766198DC53B002923FF /* RightClickButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightClickButton.m; sourceTree = "<group>"; };
 		4C8A4F91198D8D4700FC02BF /* Sliderbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sliderbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8A4F94198D8D4700FC02BF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4C8A4F97198D8D4700FC02BF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -332,6 +335,8 @@
 				4C27D6FB198DBA1C002923FF /* PopupWindow.m */,
 				4C27D6FD198DBBBA002923FF /* MidiController.h */,
 				4C27D6FE198DBBBA002923FF /* MidiController.m */,
+				4C27D765198DC53B002923FF /* RightClickButton.h */,
+				4C27D766198DC53B002923FF /* RightClickButton.m */,
 			);
 			path = Sliderbar;
 			sourceTree = "<group>";
@@ -632,6 +637,7 @@
 				4C8A4FA8198D8D4800FC02BF /* AppDelegate.m in Sources */,
 				4C27D6FF198DBBBA002923FF /* MidiController.m in Sources */,
 				4C8A4FA1198D8D4700FC02BF /* main.m in Sources */,
+				4C27D767198DC53C002923FF /* RightClickButton.m in Sources */,
 				4C27D6FC198DBA1C002923FF /* PopupWindow.m in Sources */,
 				4C27D6F8198DB5B9002923FF /* PopupViewController.m in Sources */,
 			);
