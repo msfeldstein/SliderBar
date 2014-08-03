@@ -24,6 +24,7 @@
     [_statusItem setView:_rightClickButton];
     [_rightClickButton setTarget:self];
     [_rightClickButton setAction:@selector(openWindow:)];
+    [self openWindow:_rightClickButton];
 }
 
 - (void)openWindow:(NSButton*)button {
@@ -34,13 +35,9 @@
     if (!_popupViewController) {
          _popupViewController = [[PopupViewController alloc] initWithWindowNibName:@"PopupViewController"] ;
     }
-//    NSLog(@"Sender %@", sender);
    
     NSWindow* window = _popupViewController.window;
-    NSRect windowFrame = window.frame;
-    windowFrame.origin = button.frame.origin;
-    CGRect eventFrame = [[[NSApp currentEvent] window] frame];
-    CGPoint eventOrigin = eventFrame.origin;
+    NSPoint eventOrigin = [button.window convertBaseToScreen:button.frame.origin];
     [window setFrameOrigin:eventOrigin];
     [window makeKeyAndOrderFront:self];
     [window orderFrontRegardless];
