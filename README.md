@@ -6,6 +6,8 @@ An app for working with MIDI controlled software when you don't have your contro
 
 Email me if you have any questions, comments, or suggestions at msfeldstein@gmail.com
 
+The hard work was done by the VidVox guys in their VVMidi library: https://github.com/mrRay/vvopensource
+
 [Download it](https://github.com/msfeldstein/SliderBar/raw/master/SliderbarApp.zip)
 
 ![](https://raw.githubusercontent.com/msfeldstein/SliderBar/master/Extras/Screenshot.png)
