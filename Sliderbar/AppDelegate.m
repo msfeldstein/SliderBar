@@ -27,7 +27,7 @@
 }
 
 - (void)openWindow:(NSButton*)button {
-    if (_popupViewController.window.visible) {
+    if ([_popupViewController.window isVisible]) {
         [_popupViewController.window close];
         return;
     }

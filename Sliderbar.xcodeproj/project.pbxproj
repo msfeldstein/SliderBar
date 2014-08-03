@@ -24,6 +24,8 @@
 		4C8A4FB5198D8D4800FC02BF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8A4F94198D8D4700FC02BF /* Cocoa.framework */; };
 		4C8A4FBD198D8D4800FC02BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A4FBB198D8D4800FC02BF /* InfoPlist.strings */; };
 		4C8A4FBF198D8D4800FC02BF /* SliderbarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A4FBE198D8D4800FC02BF /* SliderbarTests.m */; };
+		4C8A4FEC198DCAD000FC02BF /* VVMIDI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C27D741198DBFC1002923FF /* VVMIDI.framework */; };
+		4C8A4FED198DCC5000FC02BF /* VVBasics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C27D735198DBFC1002923FF /* VVBasics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +199,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4C8A4FD3198DCAB400FC02BF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4C8A4FED198DCC5000FC02BF /* VVBasics.framework in CopyFiles */,
+				4C8A4FEC198DCAD000FC02BF /* VVMIDI.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4C27D6F5198DB5B9002923FF /* PopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupViewController.h; sourceTree = "<group>"; };
 		4C27D6F6198DB5B9002923FF /* PopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupViewController.m; sourceTree = "<group>"; };
@@ -234,8 +250,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C27D764198DBFFC002923FF /* VVMIDI.framework in Frameworks */,
 				4C8A4F95198D8D4700FC02BF /* Cocoa.framework in Frameworks */,
+				4C27D764198DBFFC002923FF /* VVMIDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +396,7 @@
 			buildPhases = (
 				4C8A4F8D198D8D4700FC02BF /* Sources */,
 				4C8A4F8E198D8D4700FC02BF /* Frameworks */,
+				4C8A4FD3198DCAB400FC02BF /* CopyFiles */,
 				4C8A4F8F198D8D4700FC02BF /* Resources */,
 			);
 			buildRules = (
@@ -780,7 +797,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sliderbar/Sliderbar-Prefix.pch";
 				INFOPLIST_FILE = "Sliderbar/Sliderbar-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -793,7 +812,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sliderbar/Sliderbar-Prefix.pch";
 				INFOPLIST_FILE = "Sliderbar/Sliderbar-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
