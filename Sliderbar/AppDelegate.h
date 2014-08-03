@@ -7,9 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "PopupViewController.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+    NSStatusItem* _statusItem;
+    PopupViewController* _popupViewController;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+
 
 @end

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6154.17"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PopupViewController">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5" customClass="PopupWindow">
+            <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="311" height="383"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="311" height="383"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" tag="16" translatesAutoresizingMaskIntoConstraints="NO" id="Bht-Jy-ZBD">
+                        <rect key="frame" x="18" y="340" width="236" height="21"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="above" sliderType="linear" id="Rab-AF-Iuc"/>
+                        <connections>
+                            <action selector="sliderChange:" target="y88-ci-KQq" id="fsw-St-Ys1"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" tag="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tr1-BN-m64">
+                        <rect key="frame" x="18" y="300" width="236" height="21"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="above" sliderType="linear" id="SX1-At-YxI"/>
+                        <connections>
+                            <action selector="sliderChange:" target="y88-ci-KQq" id="PpR-KF-AJf"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" tag="18" translatesAutoresizingMaskIntoConstraints="NO" id="70Z-NE-IWU">
+                        <rect key="frame" x="18" y="260" width="236" height="21"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="above" sliderType="linear" id="RKd-No-nI4"/>
+                        <connections>
+                            <action selector="sliderChange:" target="y88-ci-KQq" id="HFN-WX-oYe"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" tag="19" translatesAutoresizingMaskIntoConstraints="NO" id="TLK-Zz-cFh">
+                        <rect key="frame" x="18" y="220" width="236" height="21"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="above" sliderType="linear" id="zub-Sl-RY4"/>
+                        <connections>
+                            <action selector="sliderChange:" target="y88-ci-KQq" id="dPx-Nv-Ql3"/>
+                        </connections>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qe7-ks-8al">
+                        <rect key="frame" x="272" y="342" width="21" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="16" id="Dr0-EC-3R2">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="33j-6r-TPa">
+                        <rect key="frame" x="272" y="302" width="21" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="17" id="cY1-Ut-Xx6">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrj-N9-CiF">
+                        <rect key="frame" x="272" y="262" width="21" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="18" id="lxF-Fz-HUP">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bnl-bx-ffI">
+                        <rect key="frame" x="272" y="222" width="21" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="19" id="qtz-7p-XJh">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="20" translatesAutoresizingMaskIntoConstraints="NO" id="agQ-bi-GL6">
+                        <rect key="frame" x="20" y="178" width="48" height="25"/>
+                        <buttonCell key="cell" type="squareTextured" title="CH 20" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PRh-MM-P1b">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="buttonPress:" target="y88-ci-KQq" id="sJu-pI-Nu4"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="21" translatesAutoresizingMaskIntoConstraints="NO" id="3ky-bE-2fz">
+                        <rect key="frame" x="112" y="178" width="48" height="25"/>
+                        <buttonCell key="cell" type="squareTextured" title="CH 21" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="usi-Eb-3VP">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="buttonPress:" target="y88-ci-KQq" id="2Ih-FC-vCW"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="22" translatesAutoresizingMaskIntoConstraints="NO" id="WLt-Oh-63c">
+                        <rect key="frame" x="204" y="178" width="48" height="25"/>
+                        <buttonCell key="cell" type="squareTextured" title="CH 22" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lhX-fN-NP1">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="buttonPress:" target="y88-ci-KQq" id="5LA-NC-2mP"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="eGm-NW-s6p"/>
+            </connections>
+            <point key="canvasLocation" x="54.5" y="210.5"/>
+        </window>
+        <customObject id="y88-ci-KQq" customClass="MidiController"/>
+    </objects>
+</document>
