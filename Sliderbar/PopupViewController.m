@@ -18,6 +18,20 @@
 {
     self = [super initWithWindowNibName:windowNibName];
     if (self) {
+        NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+        NSDictionary* values = [defaults objectForKey:@"Channels"];
+        if (values) {
+            NSEnumerator* enumerator = [values keyEnumerator];
+            NSString* key;
+            while (key = [enumerator nextObject]) {
+                NSNumber* value = [values objectForKey:key];
+                NSInteger tag = [key integerValue];
+                NSTextField* field = [self.window.contentView viewWithTag:tag];
+                [field setIntegerValue:value.integerValue];
+                NSLog(@"Set field %@ to %@", field, value);
+            }
+        }
+        
     }
     return self;
 }
@@ -34,20 +48,34 @@
 
 - (IBAction)toggleEditMode:(id)sender {
     [self.window endEditingFor:nil];
-    [self enableAllTextFieldsInView:self.window.contentView];
+    NSArray* fields = [self textFieldsInView:self.window.contentView];
+    NSMutableDictionary* values = [NSMutableDictionary dictionary];
+    for (NSTextField* field in fields) {
+        [field resignFirstResponder];
+        [field setEnabled:![field isEnabled]];
+        [field setBezeled:![field isBezeled]];
+        [values setObject:[NSNumber numberWithLong:field.integerValue] forKey:[NSString stringWithFormat:@"%li", (long)field.tag]];
+    }
+    [self save:values];
 }
 
-- (void)enableAllTextFieldsInView:(NSView*)view {
-    NSArray *subviews = [view subviews];
-    for (NSView *view in subviews) {
-        if ([view class] == [NSTextField class]) {
-            NSTextField* field = (NSTextField*)view;
-            [field resignFirstResponder];
-            [field setEnabled:![field isEnabled]];
-            [field setBezeled:![field isBezeled]];
-        } else {
-            [self enableAllTextFieldsInView:view];
+- (NSArray*)textFieldsInView:(NSView*)view {
+    NSMutableArray* fields = [NSMutableArray array];
+    if ([view class] == [NSTextField class]) {
+        [fields addObject:view];
+    } else {
+        for (NSView* subview in view.subviews) {
+            NSArray* subfields = [self textFieldsInView:subview];
+            [fields addObjectsFromArray:subfields];
         }
     }
+    return fields;
+
+}
+
+- (void) save:(NSDictionary*)values {
+    NSLog(@"Save %@", values);
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:values forKey:@"Channels"];
 }
 @end
