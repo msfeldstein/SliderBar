@@ -9,5 +9,5 @@
 #import <Cocoa/Cocoa.h>
 
 @interface PopupViewController : NSWindowController <NSWindowDelegate>
-
+- (IBAction)toggleEditMode:(id)sender;
 @end
