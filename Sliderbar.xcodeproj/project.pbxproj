@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1F142A198EE69200D0C4B6 /* MIDISliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F1429198EE69200D0C4B6 /* MIDISliderView.m */; };
+		4C1F142D198EE8F000D0C4B6 /* MIDISliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F142C198EE8F000D0C4B6 /* MIDISliderCell.m */; };
 		4C27D6F8198DB5B9002923FF /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C27D6F6198DB5B9002923FF /* PopupViewController.m */; };
 		4C27D6F9198DB5B9002923FF /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C27D6F7198DB5B9002923FF /* PopupViewController.xib */; };
 		4C27D6FC198DBA1C002923FF /* PopupWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C27D6FB198DBA1C002923FF /* PopupWindow.m */; };
@@ -214,6 +216,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C1F1428198EE69200D0C4B6 /* MIDISliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDISliderView.h; sourceTree = "<group>"; };
+		4C1F1429198EE69200D0C4B6 /* MIDISliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDISliderView.m; sourceTree = "<group>"; };
+		4C1F142B198EE8F000D0C4B6 /* MIDISliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDISliderCell.h; sourceTree = "<group>"; };
+		4C1F142C198EE8F000D0C4B6 /* MIDISliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDISliderCell.m; sourceTree = "<group>"; };
 		4C27D6F5198DB5B9002923FF /* PopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupViewController.h; sourceTree = "<group>"; };
 		4C27D6F6198DB5B9002923FF /* PopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupViewController.m; sourceTree = "<group>"; };
 		4C27D6F7198DB5B9002923FF /* PopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
@@ -267,6 +273,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C1F1427198EE68200D0C4B6 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				4C1F1428198EE69200D0C4B6 /* MIDISliderView.h */,
+				4C1F1429198EE69200D0C4B6 /* MIDISliderView.m */,
+				4C1F142B198EE8F000D0C4B6 /* MIDISliderCell.h */,
+				4C1F142C198EE8F000D0C4B6 /* MIDISliderCell.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
 		4C27D719198DBFC0002923FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +355,7 @@
 		4C8A4F9A198D8D4700FC02BF /* Sliderbar */ = {
 			isa = PBXGroup;
 			children = (
+				4C1F1427198EE68200D0C4B6 /* Controls */,
 				4C27D718198DBFC0002923FF /* VVOpenSource.xcodeproj */,
 				4C8A4FA6198D8D4800FC02BF /* AppDelegate.h */,
 				4C8A4FA7198D8D4800FC02BF /* AppDelegate.m */,
@@ -652,7 +670,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8A4FA8198D8D4800FC02BF /* AppDelegate.m in Sources */,
+				4C1F142D198EE8F000D0C4B6 /* MIDISliderCell.m in Sources */,
 				4C27D6FF198DBBBA002923FF /* MidiController.m in Sources */,
+				4C1F142A198EE69200D0C4B6 /* MIDISliderView.m in Sources */,
 				4C8A4FA1198D8D4700FC02BF /* main.m in Sources */,
 				4C27D767198DC53C002923FF /* RightClickButton.m in Sources */,
 				4C27D6FC198DBA1C002923FF /* PopupWindow.m in Sources */,

@@ -28,7 +28,6 @@
                 NSInteger tag = [key integerValue];
                 NSTextField* field = [self.window.contentView viewWithTag:tag];
                 [field setIntegerValue:value.integerValue];
-                NSLog(@"Set field %@ to %@", field, value);
             }
         }
         
@@ -74,7 +73,6 @@
 }
 
 - (void) save:(NSDictionary*)values {
-    NSLog(@"Save %@", values);
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:values forKey:@"Channels"];
 }
